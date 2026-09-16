@@ -1,0 +1,353 @@
+/* =========================================
+   GLOBAL NAVBAR
+   ========================================= */
+
+.app-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+
+  background: #101828;
+
+  padding: 0.7rem 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.brand-name span {
+  color: #48c8ff;
+}
+
+.app-navbar .navbar-item {
+  color: #d0d5dd;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.app-navbar .navbar-item:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================================
+   HOME
+   ========================================= */
+
+.home-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(72, 200, 255, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #08111f,
+      #101d30
+    );
+
+  overflow: hidden;
+}
+
+.home-title {
+  animation: fadeUp 0.7s ease-out;
+}
+
+.home-subtitle {
+  max-width: 620px;
+
+  line-height: 1.7;
+
+  animation: fadeUp 0.9s ease-out;
+}
+
+.home-button {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  animation: fadeUp 1.1s ease-out;
+}
+
+.home-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px rgba(72, 200, 255, 0.25);
+}
+
+
+/* =========================================
+   HOME PREVIEW
+   ========================================= */
+
+.home-card {
+  padding: 2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.25);
+
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+.home-card-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #48c8ff;
+
+  box-shadow:
+    0 0 15px rgba(72, 200, 255, 0.8);
+
+  margin-bottom: 1.5rem;
+}
+
+.pipeline-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 1rem 0;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  color: #b9c6d3;
+}
+
+.pipeline-row strong {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   DASHBOARD
+   ========================================= */
+
+.dashboard-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+
+  background: #e2e8f1;
+
+  color: #101828;
+}
+
+
+/* Dashboard container */
+
+.dashboard-page > .container {
+  width: 100%;
+}
+
+
+/* Headings */
+
+.dashboard-page .title {
+  color: #101828;
+}
+
+.dashboard-page .subtitle {
+  color: #667085;
+}
+
+.dashboard-page .label {
+  color: #344054;
+}
+
+
+/* =========================================
+   STAT CARDS
+   ========================================= */
+
+.stat-card {
+  min-height: 130px;
+
+  border: 1px solid #eaecf0;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 1px 3px rgba(16, 24, 40, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(16, 24, 40, 0.08);
+}
+
+.stat-card .heading {
+  color: #667085;
+}
+
+.stat-card .title {
+  color: #101828;
+}
+
+
+/* =========================================
+   DASHBOARD BOXES
+   ========================================= */
+
+.dashboard-page .box {
+  background: #ffffff;
+
+  border: 1px solid #eaecf0;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 1px 3px rgba(16, 24, 40, 0.05);
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+.dashboard-page .input {
+  height: 44px;
+
+  border-color: #d0d5dd;
+
+  color: #101828;
+
+  background: #ffffff;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dashboard-page .input::placeholder {
+  color: #98a2b3;
+}
+
+.dashboard-page .input:focus {
+  border-color: #48c8ff;
+
+  box-shadow:
+    0 0 0 3px rgba(72, 200, 255, 0.12);
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.dashboard-page .button {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dashboard-page .button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.dashboard-page .table {
+  background: #ffffff;
+
+  color: #344054;
+}
+
+.dashboard-page .table thead th {
+  color: #475467;
+
+  background: #f9fafb;
+
+  border-bottom:
+    1px solid #eaecf0;
+}
+
+.dashboard-page .table td {
+  vertical-align: middle;
+
+  border-color: #f2f4f7;
+}
+
+.dashboard-page .table tbody tr {
+  transition:
+    background 0.15s ease;
+}
+
+.dashboard-page .table tbody tr:hover {
+  background: #f9fafb;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+
+}
+
+@keyframes floatCard {
+
+  0%,
+  100% {
+    transform:
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translateY(-8px);
+  }
+
+}
